@@ -1,0 +1,189 @@
+
+*{margin:0;padding: 0;box-sizing: border-box; font-family: 'Mulish', sans-serif;}
+
+ 
+
+
+
+
+/* HEADERS */
+.corona_updates h3
+{
+    text-align: center;
+    color:#009879;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px #a29bfe;
+    margin-top:15px;
+    
+     
+
+}
+
+.worldoutput h2{
+    text-align: center;
+    color:#009879;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px #a29bfe;
+}
+.datatable h3
+{
+    text-align: center;
+    color:#009879;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px #a29bfe;
+
+}
+.symptoms h1
+{
+    text-align: center;
+    color:#009879;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px #a29bfe;
+    
+}
+.precautions h1
+{
+    text-align: center;
+    color:#009879;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px #a29bfe;
+    
+}
+ 
+/*ANIMATION */
+.corona_animate img{
+    animation: corona_rot 3s linear infinite;
+}
+@keyframes corona_rot{
+    0%{transform: rotate(0);}
+    100% {transform:rotate(360deg);}
+}
+
+
+/* ANIMATION GLOBE */
+.world img
+{
+    animation: globe_rot 3s linear infinite;
+}
+@keyframes globe_rot{
+    0%{transform:rotate(0);}
+    100%{transform:rotate(360deg);}
+}
+
+
+/*cards*/
+.card-box {
+        position: relative;
+        color: #fff;
+        padding: 20px 20px 65px ;
+        margin: 20px 0px;
+    }
+    .card-box:hover {
+        text-decoration: none;
+        color: #f1f1f1;
+    }
+    .card-box:hover .icon i {
+        font-size: 100px;
+        transition: 1s;
+        -webkit-transition: 1s;
+    }
+    .card-box .inner {
+        padding: 5px 10px 0 10px;
+    }
+    .card-box h3 {
+        font-size: 27px;
+        font-weight: bold;
+        margin: 0 0 8px 0;
+        white-space: nowrap;
+        padding: 0;
+        text-align: left;
+    }
+    .card-box p {
+        font-size: 15px;
+    }
+    .card-box .icon {
+        position: absolute;
+        top: auto;
+        bottom: 5px;
+        right: 5px;
+        z-index: 0;
+        font-size: 72px;
+        color: rgba(0, 0, 0, 0.15);
+    }
+    .card-box .card-box-footer {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        text-align: center;
+        padding: 3px 0;
+        color: rgba(255, 255, 255, 0.8);
+        background: rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-decoration: none;
+    }
+    .card-box:hover .card-box-footer {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 15px;
+    }
+    .bg-blue {
+        background-color: #00c0ef !important;
+    }
+    .bg-green {
+        background-color: #00a65a !important;
+    }
+    .bg-orange {
+        background-color: #f39c12 !important;
+    }
+    .bg-red {
+        background-color: #d9534f !important;
+    }
+    
+    
+
+
+
+
+
+/* CSS TABLES */
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size:0.9em;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+}
+.table thead tr
+{
+    background-color: #009879;
+    color: seashell;
+    font-weight: bold;
+}
+.table tbody tr
+{
+    border-bottom: 1px solid#dddddd;
+
+}
+.table tbody tr:nth-of-type(even)
+{
+    background-color: slategray;
+
+}
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid#009879;
+}
+.table tbody tr .active-row
+{
+    font-weight: bold;
+    color: #009879;
+}
+.table tbody td:nth-child(20)
+{
+    display: none;
+}
